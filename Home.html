@@ -10,6 +10,7 @@ margin: 0;
 padding: 0;
 height: 100vh;
 width: 100vw;
+overflow: hidden;
 
 
 background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -87,6 +88,7 @@ p{
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat;
+        overflow: hidden;
     } 
     nav{
     margin: 7px;
@@ -99,7 +101,7 @@ p{
         font-size: 25px;
     }
     footer{
-        margin: 0 0 0 0;
+        margin: 0;
         padding: 0;
     }
 }
@@ -132,6 +134,14 @@ p{
     }
     p{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+    @media (max-width: 510px) {
+        h1{
+        font: bold 30px times;
+    }
+    nav a {
+        font-size: 18px;
     }
 }
 
