@@ -13,8 +13,7 @@ width: 100vw;
 overflow: hidden;
 
 
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-url(https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-recebe-evento-com-exposicao-de-carros-antigos-2021-12-13-61b75cd9a378d.jpeg);
+background-image: url(pack_de_responsividade/backgrnd_escuro.png);
 background-size: cover; 
 background-position: center;
 background-repeat: no-repeat;
@@ -25,7 +24,6 @@ header{
 }
 
 nav{
-    margin-left: 15px;
     padding: 15px 2%;
     display: flex;
     justify-content: flex-end;
@@ -40,8 +38,7 @@ nav{
 
 a{
     text-decoration: none;
-  /*  color: rgb(196, 149, 32);*/
-  color: wheat;
+    color: wheat;
 }
 
 #navigation a:hover{
@@ -52,10 +49,9 @@ a{
 
 h1{
     font: bold 2.8em times;
-    /*color: rgb(196, 149, 32);*/
-    color: red;
+    color: rgb(196, 149, 32);
     text-align: center;
-   
+    align-items: center;
 }
 
 .center{
@@ -64,7 +60,7 @@ h1{
 }
 
 span{
-    font-size: 17px;
+    font-size: 1em;
 }
 
 footer{
@@ -77,11 +73,9 @@ footer{
 
 p{
     font-size: 10px;
-    white-space: nowrap; /* Evita quebra de texto */
-    text-overflow: ellipsis; /* Coloca "..." caso o texto não caiba*/
     margin:1vh 0.5em;
 }
-@media (max-width: 764px) { 
+/*@media (max-width: 764px) { 
     body {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('pack_de_responsividade/8uKlfvFSRHyeNac8ml14UA.jpg');
@@ -147,6 +141,51 @@ p{
     }
     nav a {
         font-size: 18px;
+    }
+}*/
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+    h1{
+        font-size: 2em;
+    }
+    nav{
+        justify-content: center;
+    }
+    #navigation{
+        display: flex;
+        justify-content: center;
+        margin: 0 3px 0 3px;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Smartphones médios */
+@media (max-width: 768px) {
+    h1{
+        font-size: 1.9em;
+    }
+    nav{
+        justify-content: center;
+    }
+    #navigation{
+        display: flex;
+        justify-content: center;
+        margin: 0 0.9em 0.9em;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Laptops grandes e desktops */
+@media (min-width: 1281px) {
+    body {
+        font-size: 20px;
+        background-color: white;
     }
 }
 
