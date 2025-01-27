@@ -9,9 +9,10 @@ body{
 margin: 0; 
 padding: 0;
 height: 100vh;
+width: 100vw;
 
 
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 url(https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-recebe-evento-com-exposicao-de-carros-antigos-2021-12-13-61b75cd9a378d.jpeg);
 background-size: cover; 
 background-position: center;
@@ -79,6 +80,61 @@ p{
     text-overflow: ellipsis; /* Coloca "..." caso o texto não caiba*/
     margin:1vh 0.5em;
 }
+@media (max-width: 764px) { 
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('pack_de_responsividade/backgrnd-M-.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+    nav{
+    margin: 7px;
+    padding: 15px 2%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    }
+    nav a {
+        font-size: 25px;
+    }
+    footer{
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('pack_de_responsividade/backgrnd-P-.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    h1{
+        font: bold 35px times;
+    }
+    nav{
+    margin: 10px;
+    padding: 15px 2%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+    nav a {
+        font-size: 22px;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
    </style>
 </head>
 <body>
